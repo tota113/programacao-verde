@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<title>Cine Deltha</title>
+
+</head>
+
+
+<body>
+  <ul>
+<div class="nav-menu"></div>
+<div class="navmenu"></div>
+    <li><a href=#home>home</a></li>
+<li><a href=#sobre>sobre</a></li>
+<li><a href=#contato>contato</a></li>
+<li><a href="#formlario">formulario</a></li>
+
+</ul>
+<h1>Cine Deltha</h1>
+<h2>segunda PARTE</h2>
+<h3>terceira parte</h3>
+<h4>quarta parte</h4>
+<h5>quinta PARTE</h5>
+<h6>sexta parte</h6>
+<p><i><big><em> Vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</br>
+Pra lá , depois divoltis porris, paradis.Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.</br>
+Aenean sit amet nisi.Leite de capivaris, leite de mula manquis sem cabeça.
+Sala verde é a melhor. apenas</p>
+<img src="imagens/lol-curtindo-o-verao-sett-braum-1621968187456_v2_615x300.jpg"
+
+<div>
+
+  <img class="logo-menu" src="imagens/download.jfif" alt="Imagem Principal">
+
+</div>
+
+
+
+
+
+  <div class="navmenu">  
+
+    <ul>
+
+      <li><a href="#home">home</a></li>
+
+      <li><a href="#menu">menu</a></li>
+
+      <li><a href="#sobre">sobre</a></li>
+
+      <li><a href="#contato">contato</a></li>
+
+      <li><a href="#formulário">formulário</a></li>
+
+    </ul>
+
+  </div>
+  <div class="slideshow-container">
+
+
+
+    <div class="mySlides fade">
+
+      <div class="numbertext"></div>
+
+      <img src="imagens/download (1).jfif" style="width:50%">
+
+      <div class="text"></div>
+
+    </div>
+
+   
+
+    <div class="mySlides fade">
+
+      <div class="numbertext"></div>
+
+      <img src="imagens/download (2).jfif" style="width:50%">
+
+      <div class="text"></div>
+
+    </div>
+
+   
+
+    <div class="mySlides fade">
+
+      <div class="numbertext"></div>
+
+      <img src="imagens/download (3).jfif" style="width:50%;">
+
+      <div class="text"></div>
+
+    </div>
+    
+  </div>
+<!-- Next and previous buttons -->
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div><br>
+
+
+
+<!-- The dots/circles -->
+
+<div style="text-align:center">
+
+<span class="dot" onclick="currentSlide(1)"></span>
+
+<span class="dot" onclick="currentSlide(2)"></span>
+
+<span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+<script>
+
+  let slideIndex = 1;
+
+  showSlides(slideIndex);
+
+ 
+
+  // Next/previous controls
+
+  function plusSlides(n)
+
+  {
+
+    showSlides(slideIndex += n);
+
+  }
+
+ 
+
+  // Thumbnail image controls
+
+  function currentSlide(n)
+
+  {
+
+    showSlides(slideIndex = n);
+
+  }
+
+ 
+
+  function showSlides(n)
+  {
+
+let i;
+
+let slides = document.getElementsByClassName("mySlides");
+
+let dots = document.getElementsByClassName("dot");
+
+if (n > slides.length) {slideIndex = 1}
+
+if (n < 1) {slideIndex = slides.length}
+
+for (i = 0; i < slides.length; i++) {
+
+  slides[i].style.display = "none";
+
+}
+
+for (i = 0; i < dots.length; i++) {
+
+  dots[i].className = dots[i].className.replace(" active", "");
+
+}
+
+slides[slideIndex-1].style.display = "block";
+
+dots[slideIndex-1].className += " active";
+
+}
+
+</script>
+  </body>
+</html>
