@@ -17,7 +17,7 @@ for(var i = 0; i < btn.length; i++){
                  input.innerHTML += "*";
                  break;
              case 2:
-                   inputu.innerHTML += "+";
+                   input.innerHTML += "+";
                    break;
              case 3:
                  input.innerHTML += "-";
@@ -47,7 +47,36 @@ for(var i = 0; i < btn.length; i++){
              default:
              break;
         }
-    }
+    };
+    btn[i].addEventListener('click', function(){
+       var btnval = this.innerHTML,
+    inputval = input.innerHTML;
+     console.log(btnval)
+    
+    
+     switch(btnval){
+        case  "c":
+           input.innerHTML = "";
+           break;
+        case"=":
+
+        var equacao = inputval;
+
+        if (equacao){
+            try{
+                input.innerHTML = eval(equacao);
+            }catch(e){
+                   alert('erro na expressão')
+        }
+           
+           }
+           break;
+           default:
+                input.innerHTML += btnval;
+                break;
+        }
+        
+    });
     
 };
 
